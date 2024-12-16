@@ -38,6 +38,8 @@ struct Parameters
 end
 
 mutable struct Forcing
+    L0w::Float64
+    L0nw::Float64
     tair::Float64
     tp_top::Float64
     tp_middle::Float64

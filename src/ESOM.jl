@@ -46,8 +46,8 @@ function create_parameters()
     litterN = 1.2
     pH = 3.4
     ash = 5.0
-    enable_peatbottom = 1
-    enable_peatmiddle = 1
+    enable_peatbottom = 0
+    enable_peatmiddle = 0
     enable_peattop = 1
     C_modif = 1.05
     contpara = 100
@@ -73,9 +73,9 @@ function initialize_storages(params::Parameters)
     FL_mass = params.h_humus * params.frac_F * params.rho_humus * params.frac_leaf * 100 / 100.
     FW_mass = params.h_humus * params.frac_F * params.rho_humus * params.frac_woody * 100 / 100.
     H_mass = params.h_humus * params.frac_H * params.rho_humus * 100 / 100.
-    P1_mass = 93.5 # kg m-2
-    P2_mass = 93.5
-    P3_mass = 93.5
+    P1_mass = 31.8 # kg m-2
+    P2_mass = 47.4
+    P3_mass = 47.7
 
     return LL_mass, LW_mass, FL_mass, FW_mass, H_mass, P1_mass, P2_mass, P3_mass
 end
